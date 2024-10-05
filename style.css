@@ -2,8 +2,17 @@
 
 .keys-operator-bttns{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    row-gap: 4px;
+    grid-template-columns: repeat(4, 110px);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 5px;
+}
+
+.sect-calculator{
+    display: flex;
+    justify-items: center;
+    padding: 5px;
+    width: 460px;
+    background-color: red;
 }
 
 button{
