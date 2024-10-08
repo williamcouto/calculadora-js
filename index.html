@@ -4,32 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Calculadora</title>
 </head>
 <body>
     <section class="sect-calculator">
         <div class="display_result">0</div>
-
         <div class="keys-operator-bttns">
-            <button class="key-operator">RESET</button>
+            <button class="key-operator" data-action="clear_nums">RESET</button>
             <button class="key-operator" data-action="divisao">/</button>
             <button class="key-operator" data-action="">.</button>
             <button class="key-operator" data-action="deletar">DEL</button>
-            <button class="key-operator">7</button>
-            <button class="key-operator">8</button>
-            <button class="key-operator">9</button>
+            <button class="key-operator" value="7">7</button>
+            <button class="key-operator" value="8">8</button>
+            <button class="key-operator" value="8">9</button>
             <button class="key-operator" data-action="adicao">+</button>
-            <button class="key-operator">4</button>
-            <button class="key-operator">5</button>
-            <button class="key-operator">6</button>
+            <button class="key-operator" value="4">4</button>
+            <button class="key-operator" value="5">5</button>
+            <button class="key-operator" value="6">6</button>
             <button class="key-operator" data-action="subtracao">-</button>
-            <button class="key-operator">1</button>
-            <button class="key-operator">2</button>
-            <button class="key-operator">3</button>
+            <button class="key-operator" value="1">1</button>
+            <button class="key-operator" value="2">2</button>
+            <button class="key-operator" value="3">3</button>
             <button class="key-operator" data-action="multiplicacao">*</button>  
             <button class="key-operator" id="bttn-zero">0</button>
             <button class="key-operator" id="equal"  data-action="equal">=</button>
         </div>
     </section>
+    <script src="script.js"></script>
 </body>
 </html>
