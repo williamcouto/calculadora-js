@@ -21,7 +21,7 @@
 }
 
 .display_result{
-    background-color: #f5eeee;
+    font-size: 20px;
     padding: 10px;
     margin: 8px;
     width: 90%;
@@ -35,6 +35,7 @@
     padding: 2px;
     border: none;
     border-radius: 5px;
+    background-color: #fafafa;
 }
 
 #equal{
