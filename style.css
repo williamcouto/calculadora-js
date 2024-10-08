@@ -5,23 +5,36 @@
     grid-template-columns: repeat(4, 80px);
     grid-template-rows: repeat(3, 1fr);
     row-gap: 4px;
-    column-gap: 5px;
+    column-gap: 4px;
 }
 
 .sect-calculator{
     display: flex;
     justify-items: center;
-    justify-content: center;
+    margin: auto;
+    margin-top: 7%;
     padding: 5px;
     width: 460px;
 }
 
 .display_result{
     background-color: #f5eeee;
+    display: grid;
+    grid-column: span 2;
+    padding: 10px;
+    margin: 8px;
 }
 
-button{
-    width: 70px;
-    height: 60px;
+.key-operator{
+    width: 80px;
+    height: 70px;
+    cursor: pointer;
     padding: 4px;
+    border: none;
+    border-radius: 3px;
+}
+
+#bttn-zero{
+    grid-column: span 2;
+    width: 165px;
 }
