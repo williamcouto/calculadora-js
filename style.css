@@ -4,8 +4,8 @@
     display: grid;
     grid-template-columns: repeat(4, 80px);
     grid-template-rows: repeat(3, 1fr);
-    row-gap: 8px;
-    column-gap: 10px;
+    row-gap: 6px;
+    column-gap: 9px;
 }
 
 .sect-calculator{
@@ -29,13 +29,14 @@
 }
 
 .key-operator{
-    width: 80px;
+    width: 81px;
     height: 60px;
     cursor: pointer;
     padding: 2px;
-    border: none;
-    border-radius: 5px;
+    border: 1px solid #bebdbd2a;
+    border-radius: 4px;
     background-color: #fafafa;
+    font-size: 17px;
 }
 
 #equal{
