@@ -1,2 +1,13 @@
+let bttns_nums = document.querySelectorAll('.num-bttn')
 
-let bttns_nums = document.getElementsByClassName('key-operator')
+// Função para adicionar resultado ao display
+
+bttns_nums.forEach(function(button){
+    button.addEventListener('click', function(){
+        insertDisplayNums(textContent)
+    })
+})
+
+function insertDisplayNums(num){
+    document.getElementById('display_result').textContent = num
+}
