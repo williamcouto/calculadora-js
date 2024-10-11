@@ -7,5 +7,5 @@ for(let i = 0; i < bttns_nums.length; i++){
 }
 
 function insertDisplayNums(num){
-    document.querySelector('.display_result').textContent = num
+    document.querySelector('.display_result').textContent += num
 }
