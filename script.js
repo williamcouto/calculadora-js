@@ -1,13 +1,11 @@
-let bttns_nums = document.querySelectorAll('.num-bttn')
+let bttns_nums = document.getElementsByClassName('num-bttn')
 
-// Função para adicionar resultado ao display
-
-bttns_nums.forEach(function(button){
-    button.addEventListener('click', function(){
-        insertDisplayNums(textContent)
+for(let i = 0; i < bttns_nums.length; i++){
+    bttns_nums[i].addEventListener('click', function(){
+        insertDisplayNums(bttns_nums[i].textContent)
     })
-})
+}
 
 function insertDisplayNums(num){
-    document.getElementById('display_result').textContent = num
+    document.querySelector('.display_result').textContent = num
 }
