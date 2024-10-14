@@ -26,20 +26,21 @@
     font-size: 20px;
     padding: 10px;
     margin: 8px;
+    margin-bottom: 15px;
     width: 90%;
     height: 30px;
+    border-radius: 3px;
     border: 1px solid #0000000a;
     background-color: #ffff;
 }
 
 .key-operator{
-    width: 81px;
+    width: 83px;
     height: 60px;
     cursor: pointer;
-    padding: 2px;
     border: 1px solid #bebdbd2a;
-    border-radius: 4px;
-    background-color: #fafafa;
+    border-radius: 2px;
+    background-color: #ffffff;
     font-size: 17px;
 }
 
