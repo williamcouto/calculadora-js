@@ -1,4 +1,3 @@
 # Calculadora 🧮
  
-o repositório contém uma calculadorta que realiza as diversas operações aritméticas.
-
+Um repositório que contém uma calculadora que realiza diversas operações aritméticas.
