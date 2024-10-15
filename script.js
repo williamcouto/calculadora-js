@@ -9,3 +9,8 @@ for(let i = 0; i < bttns_nums.length; i++){
 function insertDisplayNums(num){
     document.querySelector('.display_result').textContent += num
 }
+
+// Limpando o Display
+function clearNums(){
+    document.querySelector('.display_result').textContent = ""
+}
