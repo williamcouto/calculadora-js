@@ -1,11 +1,6 @@
 let bttns_nums = document.getElementsByClassName('num-bttn')
 
-for(let i = 0; i < bttns_nums.length; i++){
-    bttns_nums[i].addEventListener('click', function(){
-        insertDisplayNums(bttns_nums[i].textContent)
-    })
-}
-
+// Inserindo numeros no display
 function insertDisplayNums(num){
     document.querySelector('.display_result').textContent += num
 }
@@ -13,4 +8,34 @@ function insertDisplayNums(num){
 // Limpando o Display
 function clearNums(){
     document.querySelector('.display_result').textContent = ""
+}
+
+// apagar ultimo caractere
+
+// Capturar os números que o usuario coloca
+// Colocar os numeros em um array
+// Quando o botão DEL for clicado, ele remove o ultimo ultimo numero
+
+function deleteLastNum(){
+    let bttns_nums = document.querySelectorAll('.num-bttn')
+    let num_captured = []
+
+    // Capturando os numeros
+        bttns_nums.forEach(button => {
+            button.addEventListener('click', () => {
+                // Obtem o valor númerico do botão clicado
+                //const number = ;
+
+                //Adiciona o número ao array de números clicados - usar o push()
+                num_captured.push(number)
+
+                //Removendo o ultimo caractere
+                num_captured.pop(number)
+
+                document.querySelector('.display_result').textContent = ""
+
+            })
+                
+        
+        });
 }
