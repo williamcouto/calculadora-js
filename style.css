@@ -42,6 +42,10 @@
     font-size: 17px;
 }
 
+.key-operator:hover{
+    background-color: #e4e0e0;
+}
+
 #equal{
     grid-column: span 3;
     width: 100%;
