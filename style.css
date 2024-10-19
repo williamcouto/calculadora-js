@@ -21,15 +21,16 @@
 
 .display_result{
     text-align: right;
-    font-size: 23px;
+    font-size: 22px;
     padding: 6px;
     margin: 8px;
     margin-bottom: 15px;
     width: 93%;
-    height: 38px;
+    height: 40px;
     border-radius: 3px;
     border: 1px solid #0000000a;
     background-color: #ffff;
+    font-family: Tahoma, sans-serif;
 }
 
 .key-operator{
@@ -40,6 +41,7 @@
     border-radius: 2px;
     background-color: #ffffff;
     font-size: 20px;
+    font-family: Tahoma, sans-serif;
 }
 
 .key-operator:hover{
