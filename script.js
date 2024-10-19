@@ -16,7 +16,7 @@ function clearNums(){
 // Colocar os numeros em um array
 // Quando o botão DEL for clicado, ele remove o ultimo ultimo numero
 
-function deleteLastNum(){
+function deleteLastNum(num){
     let bttns_nums = document.querySelectorAll('.num-bttn')
     let num_captured = []
 
@@ -24,18 +24,14 @@ function deleteLastNum(){
         bttns_nums.forEach(button => {
             button.addEventListener('click', () => {
                 // Obtem o valor númerico do botão clicado
-                //const number = ;
-
+                //const number = 
                 //Adiciona o número ao array de números clicados - usar o push()
                 num_captured.push(number)
 
                 //Removendo o ultimo caractere
-                num_captured.pop(number)
-
-                document.querySelector('.display_result').textContent = ""
-
+                num_captured.pop()
+                document.querySelector('.display_result').textContent = num_captured - 1
             })
-                
-        
         });
+
 }
