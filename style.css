@@ -34,12 +34,12 @@
 
 .key-operator{
     width: 82px;
-    height: 60px;
+    height: 61px;
     cursor: pointer;
-    border: 1px solid #bebdbd2a;
-    border-radius: 2px;
+    border: none;
+    border-radius: 3px;
     background-color: #ffffff;
-    font-size: 20px;
+    font-size: 21px;
     font-family: Tahoma, sans-serif;
 }
 
