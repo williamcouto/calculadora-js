@@ -5,7 +5,7 @@
     grid-template-columns: repeat(4, 80px);
     grid-template-rows: repeat(3, 1fr);
     row-gap: 10px;
-    column-gap: 8px;
+    column-gap: 11px;
 }
 
 .sect-calculator{
@@ -21,7 +21,7 @@
 
 .display_result{
     text-align: right;
-    font-size: 35px;
+    font-size: 36px;
     padding: 8px;
     margin: 8px;
     margin-bottom: 14px;
