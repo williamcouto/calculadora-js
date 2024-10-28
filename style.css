@@ -32,7 +32,7 @@
     font-family: Tahoma, sans-serif;
 }
 
-.key-operator{
+.key-operator,  .operator{
     width: 82px;
     height: 61px;
     cursor: pointer;
@@ -42,7 +42,7 @@
     font: 20px Tahoma, sans-serif;
 }
 
-.key-operator:hover{
+.key-operator:hover, .operator:hover{
     background-color: #e4e0e0;
 }
 
