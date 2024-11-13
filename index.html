@@ -8,26 +8,26 @@
 </head>
 <body>
     <section class="sect-calculator">
-        <div class="display_result"></div>
+        <div data-display class="display_result"></div>
         <div class="keys-operator-bttns">
-            <button class="key-operator" data-action="clear_nums" id="resetBttn"  onclick="clearNums()">RESET</button>
+            <button data-reset-btn class="key-operator" id="resetBttn">RESET</button>
             <button data-operator-btn class="key-operator">/</button>
-            <button class="key-operator" onclick="insertDisplayNums('.')">.</button>
-            <button class="key-operator" onclick="deleteLastNum()" id="delBttn">DEL</button>
-            <button class="key-operator" value="7" class="num-bttn" onclick="insertDisplayNums('7')">7</button>
-            <button class="key-operator" value="8" class="num-bttn" onclick="insertDisplayNums('8')">8</button>
-            <button class="key-operator" value="8" onclick="insertDisplayNums('9')">9</button>
-            <button data-operator-btn class="operator"  onclick="insertDisplayNums('+')">+</button>
-            <button class="key-operator" value="4" class="num-bttn" onclick="insertDisplayNums('4')">4</button>
-            <button class="key-operator" value="5" class="num-bttn" onclick="insertDisplayNums('5')">5</button>
-            <button class="key-operator" value="6" class="num-bttn" onclick="insertDisplayNums('6')">6</button>
-            <button data-operator-btn class="operator" onclick="insertDisplayNums('-')">-</button>
-            <button class="key-operator" value="1" class="num-bttn" onclick="insertDisplayNums('1')">1</button>
-            <button class="key-operator" value="2" class="num-bttn" onclick="insertDisplayNums('2')">2</button>
-            <button class="key-operator" value="3" class="num-bttn" onclick="insertDisplayNums('3')">3</button>
-            <button data-operator-btn class="operator" onclick="insertDisplayNums('*')">X</button>  
-            <button class="key-operator" id="bttn-zero" class="num-bttn" onclick="insertDisplayNums('0')">0</button>
-            <button data-operator-equal class="operator" id="equal" onclick="calcNumOperator()">=</button>
+            <button data-num-btn class="num-bttn" >.</button>
+            <button data-delete-btn class="key-operator"  id="delBttn">DEL</button>
+            <button data-num-btn value="7" class="num-bttn">7</button>
+            <button data-num-btn value="8" class="num-bttn">8</button>
+            <button data-num-btn value="9" class="num-bttn">9</button>
+            <button data-operator-btn class="key-operator">+</button>
+            <button data-num-btn value="4" class="num-bttn">4</button>
+            <button data-num-btn value="5" class="num-bttn">5</button>
+            <button data-num-btn value="6" class="num-bttn">6</button>
+            <button data-operator-btn class="key-operator" >-</button>
+            <button data-num-btn value="1" class="num-bttn">1</button>
+            <button data-num-btn value="2" class="num-bttn">2</button>
+            <button data-num-btn value="3" class="num-bttn">3</button>
+            <button data-operator-btn class="key-operator" >X</button>  
+            <button data-num-btn class="key-operator" id="bttn-zero" class="num-bttn" >0</button>
+            <button data-operator-equal class="key-operator" id="equal">=</button>
         </div>
     </section>
     <script src="script.js"></script>
