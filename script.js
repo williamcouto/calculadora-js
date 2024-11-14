@@ -13,7 +13,7 @@ class Calculator {
         this.operatorBttn = operatorBttn
         this.iniciarCalc()
     }
-    
+
     iniciarCalc(){
         this.bttnNum.forEach(button => {
             button.addEventListener('click', () => {
@@ -24,5 +24,9 @@ class Calculator {
 
     clearNums(){
         this.display.textContent = ""
+    }
+
+    insertNum(num){
+        this.currentDisplay.textContent += num
     }
 }
