@@ -6,16 +6,16 @@ let deleteBtn = document.querySelector('[data-delete-btn]')
 let resetBtn = document.querySelector('[data-reset-btn]')
 
 class Calculator {
-    constructor(equalBtn, display, bttns_nums, operatorBttn){
+    constructor(equalBtn, currentDisplay, bttns_nums, operatorBttn){
         this.equalBtn = equalBtn
-        this.display = display
+        this.currentDisplay = currentDisplay
         this.bttns_nums = bttns_nums
         this.operatorBttn = operatorBttn
         this.iniciarCalc()
     }
 
     iniciarCalc(){
-        this.bttnNum.forEach(button => {
+        this.bttns_nums.forEach(button => {
             button.addEventListener('click', () => {
                 this.insertNum(button.textContent)
             })
@@ -23,10 +23,12 @@ class Calculator {
     }
 
     clearNums(){
-        this.display.textContent = ""
+        this.currentDisplay.textContent = ""
     }
 
     insertNum(num){
         this.currentDisplay.textContent += num
     }
+
+
 }
