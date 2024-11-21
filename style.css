@@ -2,10 +2,10 @@
 
 .keys-operator-bttns{
     display: grid;
-    grid-template-columns: repeat(4, 80px);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
     row-gap: 10px;
-    column-gap: 11px;
+    column-gap: 15px;
 }
 
 .sect-calculator{
@@ -13,9 +13,9 @@
     flex-direction: column;
     align-items: center;
     margin: auto;
-    margin-top: 7%;
-    padding: 12px;
-    width: 360px;
+    margin-top: 4%;
+    padding: 10px;
+    width: 450px;
     background-color: #000;
 }
 
@@ -32,12 +32,12 @@
     font-family: Tahoma, sans-serif;
 }
 
-.key-operator,  .operator{
-    width: 82px;
-    height: 61px;
+.key-operator,  .operator, .num-bttn{
+    width: 95px;
+    height: 64px;
     cursor: pointer;
     border: none;
-    border-radius: 3px;
+    border-radius: 2px;
     background-color: #ffffff;
     font: 20px Tahoma, sans-serif;
 }
