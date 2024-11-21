@@ -22,6 +22,13 @@ class Calculator {
                 this.insertNum(button.textContent)
             })
         });
+
+        //Inserindo operadores no display
+        this.operatorBttn.forEach(button => {
+            button.addEventListener('click', () => {
+            this.insertNum(button.textContent)
+            })
+        })
     }
 
     clearNums(){
