@@ -45,3 +45,7 @@ const calc = new Calculator(equalBtn, currentDisplay, bttnNumbers, operatorBttn,
 resetBtn.addEventListener('click', () => {
     calc.clearNums()
 })
+
+deleteBtn.addEventListener('click', () => {
+    calc.deleteLastNum()
+})
