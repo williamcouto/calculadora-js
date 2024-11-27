@@ -43,7 +43,8 @@
 }
 
 .key-operator:hover, .operator:hover, .num-bttn:hover{
-    background-color: #e4e0e0;
+    background-color: #707070;
+    color: #fff;
 }
 
 #equal{
