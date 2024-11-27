@@ -1,4 +1,5 @@
 @charset 'UTF-8';
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
 
 .keys-operator-bttns{
     display: grid;
@@ -20,16 +21,15 @@
 }
 
 .display_result{
+    font: 35px 'Archivo', sans-serif;
     text-align: right;
-    font-size: 36px;
     padding: 6px;
     margin: 8px;
     margin-bottom: 14px;
     width: 92%;
-    height: 62px;
+    height: 60px;
     border-radius: 2px;
     background-color: #ffff;
-    font-family: Tahoma, sans-serif;
 }
 
 .key-operator,  .operator, .num-bttn{
@@ -39,7 +39,7 @@
     border: none;
     border-radius: 2px;
     background-color: #ffffff;
-    font: 20px Tahoma, sans-serif;
+    font: 22px 'Archivo', sans-serif;
 }
 
 .key-operator:hover, .operator:hover, .num-bttn:hover{
