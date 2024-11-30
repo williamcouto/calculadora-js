@@ -33,6 +33,10 @@ class Calculator {
         })
     }
 
+    updateDisplay(){
+        this.currentDisplay.textContent = this.currentOperand || this.previousOperand
+    }
+
     clearNums(){
         this.currentDisplay.textContent = ""
     }
