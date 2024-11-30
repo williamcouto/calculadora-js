@@ -6,11 +6,11 @@ let deleteBtn = document.querySelector('[data-delete-btn]')
 let resetBtn = document.querySelector('[data-reset-btn]')
 
 class Calculator {
-    constructor(equalBtn, currentDisplay, currentOperand, bttnNumbers,operator, deleteBtn, resetBtn){
+    constructor(equalBtn, currentDisplay, bttnNumbers,operator, deleteBtn, resetBtn){
         this.equalBtn = equalBtn
         this.currentDisplay = currentDisplay
         this.currentOperator = null
-        this.currentOperand = currentOperand
+        this.currentOperand = ''
         this.bttnNumbers = bttnNumbers
         this.operator = operator
         this.deleteBtn = deleteBtn
@@ -42,7 +42,8 @@ class Calculator {
     }
 
     insertNum(num){
-        this.currentDisplay.textContent += num
+        this.currentOperand += num
+        this.updateDisplay()
     }
 
     deleteLastNum(){
@@ -51,6 +52,4 @@ class Calculator {
         }
     }
 }
-
-// Testando calculadora
-const calc = new Calculator(equalBtn, currentDisplay, bttnNumbers, operatorBttn, deleteBtn, resetBtn)
+const calc = new Calculator(equalBtn, currentDisplay, bttnNumbers,operator, deleteBtn, resetBtn)
