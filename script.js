@@ -31,18 +31,24 @@ class Calculator {
             this.insertNum(button.textContent)
             })
         })
+
+        this.resetBtn.addEventListener('click', () => {
+            this.clearDisplay()
+        })
     }
 
     updateDisplay(){
         this.currentDisplay.textContent = this.currentOperand || this.previousOperand
     }
 
-    clearNums(){
-        this.currentDisplay.textContent = ""
-    }
-
     insertNum(num){
         this.currentOperand += num
+        this.updateDisplay()
+    }
+
+    clearDisplay(){
+        this.currentOperand = ''
+        this.previousOperand = ''
         this.updateDisplay()
     }
 
