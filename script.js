@@ -25,7 +25,6 @@ class Calculator {
             })
         });
 
-        //Inserindo operadores no display
         this.operator.forEach(button => {
             button.addEventListener('click', () => {
             this.insertNum(button.textContent)
@@ -56,6 +55,23 @@ class Calculator {
         if(this.currentDisplay.textContent.length > 0){
             this.currentDisplay.textContent = this.currentDisplay.textContent.slice(0, -1)
         }
+    }
+
+    calculateNum(){
+        let resultExpress;
+        const prevNum = parseFloat(this.previousOperand)
+        const currNum = parseFloat(this.currentOperand)
+
+        switch(this.currentOperator){
+            case '+':
+            resultExpress = prevNum + currNum
+            break;
+        }
+
+        this.currentOperand = resultExpress.toString()
+        this.currentOperand = null
+        this.previousOperand = ''
+        this.updateDisplay()
     }
 }
 const calc = new Calculator(equalBtn, currentDisplay, bttnNumbers,operator, deleteBtn, resetBtn)
