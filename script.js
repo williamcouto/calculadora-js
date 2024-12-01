@@ -34,6 +34,10 @@ class Calculator {
         this.resetBtn.addEventListener('click', () => {
             this.clearDisplay()
         })
+
+        this.equalBtn.addEventListener('click', () => {
+            this.calculateNum()
+        })
     }
 
     updateDisplay(){
@@ -72,6 +76,16 @@ class Calculator {
         this.currentOperand = null
         this.previousOperand = ''
         this.updateDisplay()
+    }
+
+    chooseOperator(operator){
+        if(this.currentOperand === '' || this.previousOperand != ''){
+            this.calculateNum()
+        }
+
+        this.currentOperator = operator
+        this.previousOperand = this.currentOperand
+        this.currentOperand = ''
     }
 }
 const calc = new Calculator(equalBtn, currentDisplay, bttnNumbers,operator, deleteBtn, resetBtn)
