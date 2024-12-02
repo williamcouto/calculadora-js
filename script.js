@@ -27,7 +27,7 @@ class Calculator {
 
         this.operator.forEach(button => {
             button.addEventListener('click', () => {
-            this.insertNum(button.textContent)
+            this.chooseOperator(button.textContent)
             })
         })
 
@@ -35,8 +35,8 @@ class Calculator {
             this.clearDisplay()
         })
 
-        this.equalBtn.addEventListener('click', () => {
-            this.calculateNum()
+        this.deleteBtn.addEventListener('click', () => {
+            this.deleteLastNum()
         })
     }
 
@@ -56,9 +56,8 @@ class Calculator {
     }
 
     deleteLastNum(){
-        if(this.currentDisplay.textContent.length > 0){
-            this.currentDisplay.textContent = this.currentDisplay.textContent.slice(0, -1)
-        }
+        this.currentOperand = this.currentDisplay.textContent.slice(0,-1)
+        this.updateDisplay()
     }
 
     calculateNum(){
@@ -73,8 +72,8 @@ class Calculator {
         }
 
         this.currentOperand = resultExpress.toString()
-        this.currentOperand = null
         this.previousOperand = ''
+        this.currentOperand = null
         this.updateDisplay()
     }
 
