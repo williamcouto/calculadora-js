@@ -82,6 +82,10 @@ class Calculator {
             case '*':
                 resultExpress = prevNum * currNum
             break;
+
+            case '/':
+                resultExpress = prevNum / currNum
+            break;
         }
 
         this.currentOperand = resultExpress.toString()
