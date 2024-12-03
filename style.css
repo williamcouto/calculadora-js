@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
 
 body{
-    background-color: #1D1D24;
+    background-color: #1E1E25;
 }
 
 .keys-operator-bttns{
@@ -10,7 +10,7 @@ body{
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
     row-gap: 10px;
-    column-gap: 12px;
+    column-gap: 11px;
 }
 .sect-calculator{
     display: flex;
@@ -19,8 +19,8 @@ body{
     margin: auto;
     margin-top: 4%;
     padding: 10px;
-    width: 450px;
-    background-color: #1D1D24;
+    width: 470px;
+    background-color: #18181E;
 }
 .display_result{
     font: 35px 'Archivo', sans-serif;
@@ -34,7 +34,7 @@ body{
     background-color: #fff;
 }
 .key-operator,  .operator, .num-bttn{
-    width: 100px;
+    width: 105px;
     height: 64px;
     cursor: pointer;
     border: none;
