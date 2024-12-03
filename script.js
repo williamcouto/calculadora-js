@@ -1,7 +1,7 @@
 let bttnNumbers = document.querySelectorAll('[data-num-btn]')
 let operator = document.querySelectorAll('[data-operator-btn]')
 let currentDisplay = document.querySelector('[data-display]')
-let equalBtn = document.querySelectorAll('[data-operator-equal]')
+let equalBtn = document.querySelector('[data-operator-equal]')
 let deleteBtn = document.querySelector('[data-delete-btn]')
 let resetBtn = document.querySelector('[data-reset-btn]')
 
@@ -11,6 +11,7 @@ class Calculator {
         this.currentDisplay = currentDisplay
         this.currentOperator = null
         this.currentOperand = ''
+        this.previousOperand = ''
         this.bttnNumbers = bttnNumbers
         this.operator = operator
         this.deleteBtn = deleteBtn
@@ -33,6 +34,10 @@ class Calculator {
 
         this.resetBtn.addEventListener('click', () => {
             this.clearDisplay()
+        })
+
+        this.equalBtn.addEventListener('click', () => {
+            this.calculateNum()
         })
 
         this.deleteBtn.addEventListener('click', () => {
@@ -73,7 +78,7 @@ class Calculator {
 
         this.currentOperand = resultExpress.toString()
         this.previousOperand = ''
-        this.currentOperand = null
+        this.currentOperator = null
         this.updateDisplay()
     }
 
