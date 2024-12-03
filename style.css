@@ -1,14 +1,17 @@
 @charset 'UTF-8';
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
 
+body{
+    background-color: #1D1D24;
+}
+
 .keys-operator-bttns{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
     row-gap: 10px;
-    column-gap: 15px;
+    column-gap: 12px;
 }
-
 .sect-calculator{
     display: flex;
     flex-direction: column;
@@ -17,23 +20,21 @@
     margin-top: 4%;
     padding: 10px;
     width: 450px;
-    background-color: #262730;
+    background-color: #1D1D24;
 }
-
 .display_result{
     font: 35px 'Archivo', sans-serif;
     text-align: right;
     padding: 6px;
-    margin: 8px;
-    margin-bottom: 14px;
-    width: 92%;
-    height: 60px;
-    border-radius: 2px;
-    background-color: #ffff;
+    margin: 6px;
+    margin-bottom: 15px;
+    width: 95%;
+    height: 61px;
+    border-radius: 4px;
+    background-color: #fff;
 }
-
 .key-operator,  .operator, .num-bttn{
-    width: 95px;
+    width: 100px;
     height: 64px;
     cursor: pointer;
     border: none;
@@ -41,20 +42,18 @@
     background-color: #ffffff;
     font: 22px 'Archivo', sans-serif;
 }
-
 .key-operator:hover, .operator:hover, .num-bttn:hover{
-    background-color: #707070;
-    color: #fff;
+    background-color: #40404F;
+    color: #ffff;
 }
-
 #equal{
     grid-column: span 3;
     width: 100%;
-    color: #ffff;
+    color: #000000;
     font-weight: bold;
-    background-color: #FB3640;
+    background-color: #FB8B24;
 }
-
-#delBttn, #resetBttn{
-    background-color: #C2EABD;
+#resetBttn{
+    background-color: #A4031F;
+    color: #fff;
 }
