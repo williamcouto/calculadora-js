@@ -72,7 +72,11 @@ class Calculator {
 
         switch(this.currentOperator){
             case '+':
-            resultExpress = prevNum + currNum
+                resultExpress = prevNum + currNum
+            break;
+
+            case '-':
+                resultExpress = prevNum - currNum
             break;
         }
 
