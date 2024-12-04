@@ -102,6 +102,9 @@ class Calculator {
         this.currentOperator = operator
         this.previousOperand = this.currentOperand
         this.currentOperand = ''
+
+        this.currentDisplay.textContent = `${this.previousOperand} ${this.currentOperator}
+        ${this.currentOperand}`
     }
 }
 const calc = new Calculator(equalBtn, currentDisplay, bttnNumbers,operator, deleteBtn, resetBtn)
