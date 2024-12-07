@@ -58,3 +58,43 @@ body{
     background-color: #A4031F;
     color: #fff;
 }
+
+@media screen and (max-width:600px){
+    .sect-calculator{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #18181E;
+        width: 90%;
+        gap: 5px;
+    }
+
+    .key-operator,  .operator, .num-bttn{
+        width: 125px;
+        height: 120px;
+        cursor: pointer;
+        border: none;
+        border-radius: 3px;
+        background-color: #ffffff;
+        font: 20px 'Archivo', sans-serif;
+    }
+
+    .keys-operator-bttns{
+        display: grid;
+        grid-template-columns: repeat(3, 140px);
+
+    }
+    .display_result{
+        font: 37px 'Archivo', sans-serif, arial;
+        text-align: right;
+        padding: 8px;
+        margin: 5px;
+        margin-bottom: 15px;
+        width: 100%;
+        height: 80px;
+        border-radius: 2px;
+        background-color: #fff;
+    }
+}
