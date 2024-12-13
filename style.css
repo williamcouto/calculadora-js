@@ -10,32 +10,31 @@ body{
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
     row-gap: 10px;
-    column-gap: 10px;
+    column-gap: 7px;
 }
 .sect-calculator{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: auto;
-    margin-top: 4%;
-    padding: 17px;
+    padding: 15px;
+    margin-top: 2%;
     border-radius: 14px;
-    width: 470px;
+    width: 500px;
     background-color: #18181E;
 }
 .display_result{
     font: 37px 'Archivo', sans-serif, arial;
     text-align: right;
     padding: 8px;
-    margin: 5px;
-    margin-bottom: 15px;
+    margin: 5px 0px 15px 0px;
     width: 94%;
     height: 61px;
     border-radius: 2px;
     background-color: #fff;
 }
 .key-operator,  .operator, .num-bttn{
-    width: 105px;
+    width: 115px;
     height: 62px;
     cursor: pointer;
     border: none;
@@ -46,6 +45,7 @@ body{
 .key-operator:hover, .operator:hover, .num-bttn:hover{
     background-color: #40404F;
     color: #ffff;
+    border: 1px solid #f3eeee;
 }
 #equal{
     grid-column: span 3;
@@ -62,7 +62,7 @@ footer div{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 4%;
+    margin-top: 5%;
 }
 footer p{
     color: #ffff;
