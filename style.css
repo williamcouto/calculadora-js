@@ -58,6 +58,24 @@ body{
     background-color: #A4031F;
     color: #fff;
 }
+footer div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4%;
+}
+footer p{
+    color: #ffff;
+    margin: auto;
+    font-family: 'Archivo';
+    font-size: 14px;
+}
+footer img{
+    width: 35px;
+    height: 35px;
+    background-color: #f7f7f7;
+    border-radius: 50%;
+}
 
 @media screen and (max-width:600px){
     .sect-calculator{
